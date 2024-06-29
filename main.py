@@ -26,16 +26,18 @@ from PyPDF2 import PdfMerger, PdfReader
 
 def merge_pdfs(name, output_name):
     merger = PdfMerger()
-
+    
     # Process first page
-    for first_file_name in os.listdir(first):
-        if first_file_name == name:
-            first_page_path = os.path.join(first, first_file_name)
-            with open(first_page_path, 'rb') as f:
-                merger.append(PdfReader(f))
-        else:
-            print(f"First page not found for {name}")
-            return
+    for root, _, first_files in os.walk(first):
+        for first_file in first_files:
+            # Check if the file is a PDF and contains the search name
+            if name in first_file:
+                full_path = os.path.join(root, first_file)
+                merger.append(full_path)
+                break
+            else:
+                print(f"First page not found for {name}")
+                return
 
     # Add other pages
     other_pages_files = [f for f in os.listdir(pages) if name in f]
@@ -79,3 +81,5 @@ print("Names to process:", names)
 # Process each name
 for name in names:
     merge_pdfs(name, f"2023-2024 Interact Volunteer Hours {name}.pdf")
+
+input("Bug testing. Check print outs. Press anything to exit.")
