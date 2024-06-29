@@ -7,10 +7,10 @@ Merge pdfs together that need a specific first page with multiple additional pag
    - **IF THEY DON'T EXIST THEY ARE AUTOMATICALLY CREATED**
    -  You need a txt editor like Notepad to edit the data.txt file. Add the names into the data.txt file, with each name on a new line.
 3. Drag and drop the pdfs you want to merge into the directories (folders).
-- The pdfs you want for the first page of the merged pdfs go in the "Fpage_pdfs" directory.
-- All additional pages for any of the merged pdfs go in the "pdfpages" directory.
+   - The pdfs you want for the first page of the merged pdfs go in the "Fpage_pdfs" directory.
+   - All additional pages for any of the merged pdfs go in the "pdfpages" directory.
 4. Run program again to sort and merge the pdfs into new pdfs inside the Output folder
-- You can just open the main.py file to run it, using IDLE from Python or other IDE's is an option.
+   - You can just open the main.py file to run it, using IDLE from Python or other IDE's is an option.
 
 ## Depndencies
 - Python
