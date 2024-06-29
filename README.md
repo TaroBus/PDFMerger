@@ -7,6 +7,7 @@ Merge pdfs together that need a specific first page with multiple additional pag
 > You need a txt editor like Notepad.
 - Fill directories, first pages in first page directory and all other pages in the second
 - Run program once again to sort and merge new pdfs into the Output folder
+> You can just open the main.py file to run it, using IDLE from Python or other IDE's is an option.
 
 ## Depndencies
 - Python
