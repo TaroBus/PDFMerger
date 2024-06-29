@@ -9,9 +9,9 @@ Merge pdfs together that need a specific first page with multiple additional pag
 
 ## Depndencies
 - Python
-https://www.python.org/downloads/
+> https://www.python.org/downloads/
 - PyPdf2
-This should be installed on first run if not already installed
+> This should be installed on first run if not already installed
 
 # Python libraries part of Python
 - os
